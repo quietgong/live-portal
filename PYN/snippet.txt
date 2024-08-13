@@ -1,0 +1,13 @@
+<model-viewer bounds="tight" enable-pan src="Ground_final.glb" ar ar-modes="webxr scene-viewer quick-look" camera-controls poster="poster.png" shadow-intensity="1" autoplay animation-name="Key.002Action.001" auto-rotate>
+    <button class="Hotspot" slot="hotspot-2" data-position="47.170444951179036m 35.74347379765595m 65.24919779403587m" data-normal="-0.9098648291749356m 0m 0.41490479947870595m" data-visibility-attribute="visible">
+        <div class="HotspotAnnotation">01</div>
+    </button><button class="Hotspot" slot="hotspot-3" data-position="33.10334738204784m 24.22662483249689m 21.092600315255936m" data-normal="-0.9098648291749356m 0m 0.41490479947870595m" data-visibility-attribute="visible">
+        <div class="HotspotAnnotation">02</div>
+    </button><button class="Hotspot" slot="hotspot-4" data-position="14.825128532029197m 15.450749089640855m -26.297519972531347m" data-normal="0.40650976554296514m 0m 0.9136464362751073m" data-visibility-attribute="visible">
+        <div class="HotspotAnnotation">03</div>
+    </button><button class="Hotspot" slot="hotspot-5" data-position="-14.36996287755926m 20.893364272960458m -43.54886953996021m" data-normal="-0.9098648291749356m 0m 0.41490479947870595m" data-visibility-attribute="visible">
+        <div class="HotspotAnnotation">04</div>
+    </button><button class="Hotspot" slot="hotspot-6" data-position="-46.41975405528666m -1.4252064903169916m 3.1817014018129726m" data-normal="-0.4155912800104546m -1.632673808021479e-7m -0.9095514762668715m" data-visibility-attribute="visible">
+        <div class="HotspotAnnotation">05</div>
+    </button>
+</model-viewer>

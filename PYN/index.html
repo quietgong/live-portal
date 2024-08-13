@@ -1,0 +1,193 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Artijecta</title>
+    <meta charset="utf-8">
+    <meta name="description" content="Artijecta">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link type="text/css" href="./styles.css" rel="stylesheet"/>    
+    <script src="https://unpkg.com/focus-visible@5.0.2/dist/focus-visible.js" defer></script>
+    <script src="control.js"></script>
+
+    <script>
+      var clue = 0;
+
+      function hint01 () {
+          var info = document.getElementById('info');  
+          var info_text = document.getElementById('info_context');  
+          info.style.display ="block";
+          info_text.innerHTML = "<b>단서 0. 아티젝타를 포착하세요!</b></br>그들을 포착하기 위한 전파를 생성하는 와이파이 장치."
+          clue = 1;
+          console.log("01");
+      }
+
+      function hint02 () {
+          var info = document.getElementById('info');  
+          var info_text = document.getElementById('info_context');  
+          info.style.display ="block";
+          info_text.innerHTML = "<b>단서 1. 현혹의 순간</b></br>수집된 자료, 파운드 푸티지, 기록<p><p>그들은 보이지 않을 뿐, 무선 인터넷이 가능한 모든 곳에 존재한다. 잠깐의 오류로 그것을 포착했던 순간을 잊을 수 없다. 아주 짧은 순간이었지만, 손에 쥐고 있던 핸드폰 덕분에 이를 담을 수 있었다. 그리고 이 순간을 나만 겪은 것이 아니었다는 것을, 이것이 잠깐의 오류가 아닌 현실보다도 더 커져가는 현실이었음을, 오랫동안의 자료 수집으로 알게 되었다. 나의 기록을 포함해서, 많은 정보들이 그들의 존재를 증명하고 있다. 그들은 그저 존재함을 넘어, 우리를 조종하려 한다."    
+          clue = 2;
+          console.log("02");    
+      }
+
+      function hint03 () {
+          var info = document.getElementById('info');  
+          var info_text = document.getElementById('info_context');  
+          info.style.display ="block";
+          info_text.innerHTML = "<b>단서 2. 그것은 오래전부터 시작되었다.</b></br>축적된 데이터로 만들어진 인체 계측도 8장, AI 기술로 복원된 60-90년대 제품 광고 이미지 6장.<p><p>그들은 오래전부터 인간의 신체를 낱낱이 분석해 통계를 냈고, 그 정보는 우리의 소비를 이끌어 내는 전략에 쓰였다. 나는 그 증거 자료들을 오랫동안 수집했다. 그리고 결론에 이르렀다. 우리의 소비는 그들이 시공간을 넘고 온-오프라인을 넘어 번영해 나가는 것을 가능케 한다."
+          clue = 3;
+          console.log("03");
+      }
+
+      function hint04 () {
+          var info = document.getElementById('info');  
+          var info_text = document.getElementById('info_context');  
+          info.style.display ="block";
+          info_text.innerHTML = "<b>단서 3. 포착 전파 생선 설계안</b></br>그들을 포착하기 위한 전파를 생성하는 와이파이 장치 설계도.<p><p>그들의 신호는 공공 와이파이가 활발히 사용되는 지점에서 주로 발견된다. 그러나 사람들의 시선이 밀집되어 있는 만큼, 그들을 포착하기란 쉽지 않다. 나는 전시를 빌어, 고립된 틈과 같은 이곳을 방문한 모두가 그들을 잠깐이라도 포착할 수 있는 기회를 마련하려 한다. 지금껏 수집한 정보를 분석하고 취합한 결과, 와이파이 공유기를 개조하여 이 장치를 만들 수 있었다. 세개의 안테나는 와이파이 신호를 중첩시키고 전파를 교란하여 특정한 주파수를 만들어낸다. 아직 불안정하지만, 그들을 포착하는데 성공했다!"    
+          clue = 4;
+          console.log("04");
+      }
+
+      function hint05 () {
+          var info = document.getElementById('info');  
+          var info_text = document.getElementById('info_context');  
+          info.style.display ="block";
+          info_text.innerHTML = "<b>단서 4. 오래된 기록들의 파편</b><p><p>1990.10.05</br>이 몸이 이질적으로 느껴진다.</br>키보드를 두드리는 이 손을 다른 곳에서 지켜보고 있는 듯한 느낌.</br>손가락 끝에 닿는 뜨겁고 매끈한 표면이, 짜여진 코드의 시뮬레이션이라는 감각.</br>어느 순간 모든 표면이 미끄러지고, 모든 마찰이 흩어져 버릴 것 같다.</br>나는 이미 몸을 잃어버린 누군가의 의식일까?</br>내 몸과 내 몸의 모든 감각과 행동은 무언가의 의식이 반영된 결과인가?</br><i>그들은 특정한 움직임을 유도해.</i><p>2009.05.01</br>그들의 형태는 내 몸을 아주 익숙하게 움직이게 한다.</br>이 모든 것을 내 의지와 판단으로 선택했다고 생각했던 적이 있었다.</br><i>그들은 네 생각과 행동을 지배해.</i></br>온전한 내 몸, 건강한 정신, 합리적 선택, 확신에 찬 움직임.</br><i>환상</i><p><p>2017.06.02</br>의심은 찰나였다. 그러나 그 이후, 더 이상 이전과 같은 세계는 없었다.의자는 내 엉덩이와 등을 그의 표현에 닿게 했으며, 컵은 내가 물을 그 오목한 형태에 담게 하고, 내 손을 그 적당한 크기의 고리에 넣어 자기 몸을 들어 올리게 하여, 자신에게 담긴 그 물을 내 입으로 가져가게 했다.</br>"
+          clue = 5;
+          console.log("05");
+      }  
+
+      function closeClue() {
+          document.getElementById("info").style.display = "none";
+      }
+
+      function kor_button () {
+        switch(clue){
+            case 1:
+                var info = document.getElementById('info');  
+                var info_text = document.getElementById('info_context');  
+                info.style.display ="block";
+                info_text.innerHTML = "<b>단서 0. 아티젝타를 포착하세요!</b></br><i>그들을</i> 포착하기 위한 전파를 생성하는 와이파이 장치."
+                break;
+
+            case 2:
+                var info = document.getElementById('info');  
+                var info_text = document.getElementById('info_context');  
+                info.style.display ="block";
+                info_text.innerHTML = "<b>단서 1. 현혹의 순간</b></br>수집된 자료, 파운드 푸티지, 기록<p><p>그들은 보이지 않을 뿐, 무선 인터넷이 가능한 모든 곳에 존재한다. 잠깐의 오류로 그것을 포착했던 순간을 잊을 수 없다. 아주 짧은 순간이었지만, 손에 쥐고 있던 핸드폰 덕분에 이를 담을 수 있었다. 그리고 이 순간을 나만 겪은 것이 아니었다는 것을, 이것이 잠깐의 오류가 아닌 현실보다도 더 커져가는 현실이었음을, 오랫동안의 자료 수집으로 알게 되었다. 나의 기록을 포함해서, 많은 정보들이 그들의 존재를 증명하고 있다. 그들은 그저 존재함을 넘어, 우리를 조종하려 한다."    
+                break;
+
+            case 3:
+                var info = document.getElementById('info');  
+                var info_text = document.getElementById('info_context');  
+                info.style.display ="block";
+                info_text.innerHTML = "<b>단서 2. 그것은 오래전부터 시작되었다.</b></br>축적된 데이터로 만들어진 인체 계측도 8장, AI 기술로 복원된 60-90년대 제품 광고 이미지 6장.<p><p>그들은 오래전부터 인간의 신체를 낱낱이 분석해 통계를 냈고, 그 정보는 우리의 소비를 이끌어 내는 전략에 쓰였다. 나는 그 증거 자료들을 오랫동안 수집했다. 그리고 결론에 이르렀다. 우리의 소비는 그들이 시공간을 넘고 온-오프라인을 넘어 번영해 나가는 것을 가능케 한다."            
+                break;
+
+            case 4:
+                var info = document.getElementById('info');  
+                var info_text = document.getElementById('info_context');  
+                info.style.display ="block";
+                info_text.innerHTML = "<b>단서 3. 포착 전파 생선 설계안</b></br>그들을 포착하기 위한 전파를 생성하는 와이파이 장치 설계도.<p><p>그들의 신호는 공공 와이파이가 활발히 사용되는 지점에서 주로 발견된다. 그러나 사람들의 시선이 밀집되어 있는 만큼, 그들을 포착하기란 쉽지 않다. 나는 전시를 빌어, 고립된 틈과 같은 이곳을 방문한 모두가 그들을 잠깐이라도 포착할 수 있는 기회를 마련하려 한다. 지금껏 수집한 정보를 분석하고 취합한 결과, 와이파이 공유기를 개조하여 이 장치를 만들 수 있었다. 세개의 안테나는 와이파이 신호를 중첩시키고 전파를 교란하여 특정한 주파수를 만들어낸다. 아직 불안정하지만, 그들을 포착하는데 성공했다!"       
+                break;
+
+            case 5:
+                var info = document.getElementById('info');  
+                var info_text = document.getElementById('info_context');  
+                info.style.display ="block";
+                info_text.innerHTML = "<b>단서 4. 오래된 기록들의 파편</b><p><p>1990.10.05</br>이 몸이 이질적으로 느껴진다.</br>키보드를 두드리는 이 손을 다른 곳에서 지켜보고 있는 듯한 느낌.</br>손가락 끝에 닿는 뜨겁고 매끈한 표면이, 짜여진 코드의 시뮬레이션이라는 감각.</br>어느 순간 모든 표면이 미끄러지고, 모든 마찰이 흩어져 버릴 것 같다.</br>나는 이미 몸을 잃어버린 누군가의 의식일까?</br>내 몸과 내 몸의 모든 감각과 행동은 무언가의 의식이 반영된 결과인가?</br><i>그들은 특정한 움직임을 유도해.</i><p>2009.05.01</br>그들의 형태는 내 몸을 아주 익숙하게 움직이게 한다.</br>이 모든 것을 내 의지와 판단으로 선택했다고 생각했던 적이 있었다.</br><i>그들은 네 생각과 행동을 지배해.</i></br>온전한 내 몸, 건강한 정신, 합리적 선택, 확신에 찬 움직임.</br><i>환상</i><p><p>2017.06.02</br>의심은 찰나였다. 그러나 그 이후, 더 이상 이전과 같은 세계는 없었다.의자는 내 엉덩이와 등을 그의 표현에 닿게 했으며, 컵은 내가 물을 그 오목한 형태에 담게 하고, 내 손을 그 적당한 크기의 고리에 넣어 자기 몸을 들어 올리게 하여, 자신에게 담긴 그 물을 내 입으로 가져가게 했다.</br>"    
+                break;
+        }
+      }
+
+      function eng_button () {    
+        switch(clue){
+            case 1:
+                var info = document.getElementById('info');  
+                var info_text = document.getElementById('info_context');  
+                info.style.display ="block";
+                info_text.innerHTML = "<b>Clue 0. Discover Artijecta!</b></br>the Wi-Fi device that generates signal used to discover <i>them</i>"
+                break;
+    
+            case 2:
+                var info = document.getElementById('info');  
+                var info_text = document.getElementById('info_context');  
+                info.style.display ="block";
+                info_text.innerHTML = "<b>Clue 1. Moment of Temptation</b></br>collected documents, found footages, recordings<p><p><i>They</i> are invisible, yet present wherever there’s wireless internet access. I’ll never forget the moment <i>it</i> was discovered by mistake. It was a brief moment, but thanks to the phone I had in my hand, I was able to capture the scene. Through a long period of document collection, I came to understand that it wasn’t just me that experienced these moments; that they weren’t momentary errors, but a reality that was growing larger than reality itself. Including my own recordings, many sources attest to <i>their</i> existence. Going beyond mere existence, <i>they</i> seek to control us."
+                break;
+    
+            case 3:
+                var info = document.getElementById('info');  
+                var info_text = document.getElementById('info_context');  
+                info.style.display ="block";
+                info_text.innerHTML = "<b>Clue 2. It Started a Long Time Ago</b></br>8 anthropometric diagrams created out of aggregated data, 6 product advertisement images from 1960’s to 1990’s restored through AI technology<p><p>Since a long time ago, <i>they</i>’ve analyzed and charted every corner of the human body, and this information was used to form strategies for eliciting our consumption. For a long time, I’ve collected documents that prove this. And I’ve reached a conclusion. Our consumption enables <i>their</i> prosperity and expansion beyond time and space, beyond online and offline."            
+                break;
+    
+            case 4:
+                var info = document.getElementById('info');  
+                var info_text = document.getElementById('info_context');  
+                info.style.display ="block";
+                info_text.innerHTML = "<b>Clue 3. Design Plan for Generating Capture-Signal</b></br>design plan of the Wi-Fi device that generates signal used to discover <i>them</i><p><p><i>Their</i> signals are usually found where public wifi is heavily used. However, as these places tend to be full of wandering gazes, it is not easy to spot <i>them</i>. Through this exhibition, I intend to provide opportunities for everyone visiting this isolated crevasse of a place to discover <i>them</i>, even just for a moment. After analyzing and synthesizing the documents I collected so far, I was able to create this device by modifying a wifi router. The three antennas, by overlapping wifi signals and disrupting airwaves, create a particular frequency. It’s still unstable, I was successful in discovering <i>them!</i>"
+                break;
+    
+            case 5:
+                var info = document.getElementById('info');  
+                var info_text = document.getElementById('info_context');  
+                info.style.display ="block";
+                info_text.innerHTML = "<b>Clue 4. Fragments from Old Records</b><p><p>05.10.1990</br>My body feels foreign to me.</br>A feeling, like I am watching my hands typing a keyboard, from someplace else. A sense, that the cold and smooth surface against the tips of my fingers, is a simulation of a woven code.</br>As if, at any moment, all surfaces will slide, and all frictions will dissipate. Am I the consciousness of someone who’s already lost their body? Is my body, my sensations, and my actions a result, a reflection of a certain consciousness?</br><i>They prompt particular movements.</i><p>01.05.2009</br>Their form allows my body to move very well.</br>There was a time when I thought I chose all of this, through my own will and judgment.</br><i>They dominate your thoughts and actions.</i></br> My whole body, my healthy mind, my rational choices, my movements full of conviction.</br><i>fantasy</i><p><p>02.06.2017</br>Doubt was a flash. But after that, the world that used to be was no more.</br>The chair made my buttocks and back adhere to its expression, the cup made me pour water into its concave shape, it guided my hand through the appropriately-sized ring to lift its body, and made me bring the water contained within itself to my mouth."    
+                break;
+        }
+    }
+    </script>    
+  </head>
+
+  <body style="background-color: black; width: 100%; margin:0% 0% 0% 0%;">        
+    <model-viewer 
+    id="model"
+    bounds="tight"
+    enable-pan
+    src="Ground_final.glb"    
+    camera-controls
+    poster="bg.png"
+    shadow-intensity="1"
+    autoplay
+    animation-name="Key.002Action.001"
+    environment-image ="bg.png"
+    style="background-color: #000000;"
+    exposure="1.3">
+      <button id="hotspot01" onclick="hint01()" class="Hotspot" slot="hotspot-1" data-position="47.170444951179036m 40.0m 65.24919779403587m" data-normal="-0.9098648291749356m 0m 0.41490479947870595m" data-visibility-attribute="visible">
+          <!-- <div class="HotspotAnnotation">단서01</div> -->
+      </button>
+      <button id="hotspot02" onclick="hint03()" class="Hotspot" slot="hotspot-2" data-position="33.10334738204784m 28.0m 21.092600315255936m" data-normal="-0.9098648291749356m 0m 0.41490479947870595m" data-visibility-attribute="visible">
+          <!-- <div class="HotspotAnnotation">단서03</div> -->
+      </button>
+      <button id="hotspot03" onclick="hint02()" class="Hotspot" slot="hotspot-3" data-position="14.825128532029197m 19.0m -26.297519972531347m" data-normal="0.40650976554296514m 0m 0.9136464362751073m" data-visibility-attribute="visible">
+          <!-- <div class="HotspotAnnotation">단서02</div> -->
+      </button>
+      <button id="hotspot04" onclick="hint04()" class="Hotspot" slot="hotspot-4" data-position="-14.36996287755926m 24.0m -43.54886953996021m" data-normal="-0.9098648291749356m 0m 0.41490479947870595m" data-visibility-attribute="visible">
+          <!-- <div class="HotspotAnnotation">단서04</div> -->
+      </button>
+      <button id="hotspot05" onclick="hint05()" class="Hotspot" slot="hotspot-5" data-position="-46.41975405528666m 3.4m 3.1817014018129726m" data-normal="-0.4155912800104546m -1.632673808021479e-7m -0.9095514762668715m" data-visibility-attribute="visible">
+          <!-- <div class="HotspotAnnotation">단서05</div> -->
+      </button>
+    </model-viewer>
+    <div id="title" style="font-family:'Sacramento'; height: 20%; width: 100%; text-align: center; position: fixed; top: 0%; color:#FF0AF8; font-size: 43px;">
+        <p><b><i>Find the five clues!</i></b></p>
+    </div>
+
+    <div id="info" style='height: 50%; width: 100%; text-align: center; position: fixed; top: 60%; display:none;'>
+      
+      <img style='object-fit: cover; width:90vw; opacity: 0.5; margin: 0px auto;' src="hint.png">  
+      <div style='height: 100%; width: 100%; position:fixed; text-align: left;top:60%; background-color: rgba(0,0,0,0);  z-index: 10;'>
+        <button type="button" onclick ="kor_button()" style="background-color:rgb(196, 196, 13,0); border:none; position:absolute; right:23vw; top:2.6vw; width:4vw; height:4vw;"></button>         
+        <button type="button" onclick ="eng_button()" style="background-color:rgb(196, 59, 13,0);  border:none; position:absolute; right:15vw; top:2.6vw; width:4vw; height:4vw;"></button>         
+        <button type="button" onclick ="closeClue()" style="background-color:rgb(25, 13, 196,0);  border:none; position:absolute; right:8vw; top:2.6vw; width:4vw; height:4vw;"></button>         
+        <div id="info_context" style="font-family:'ChosunGu'; height:50vw; width:85vw; margin-top:11vw; margin-left: auto; margin-right: auto; font-size:3.5vw; overflow-x: hidden; overflow-y: scroll; line-height: 150%; z-index: 15; ">
+        단서
+        </div>
+        <!-- <button type="button" onclick ="hint04()" style="background-color:rgb(25, 13, 196);  border:none; position:absolute; right:8vw; top:2.6vw; width:4vw; height:4vw;"></button>          --> -->
+      </div>       
+    </div>
+    <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+  </body>
+</html>
